@@ -1,0 +1,203 @@
+:root {
+  background-image: linear-gradient(to bottom, rgb(84, 144, 194), rgb(17, 69, 90));
+  padding: 2em;
+  padding-top: 4em;
+}
+
+BODY,
+H2,
+H3,
+H4,
+H5,
+H6,
+TH,
+TD {
+  font-family: arial, helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+H1 {
+  font-size: 3em;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: bolder;
+  background-color: rgb(141, 178, 196);
+  border-radius: 0.05em;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  box-shadow: 0em 0em 0.15em rgb(12, 66, 96);
+  text-shadow: 0em 0em 5px rgb(12, 66, 96);
+}
+
+.flex {
+  display: flex;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+main {
+  background-color: rgb(141, 178, 196);
+  border-radius: 0.25em;
+  box-shadow: 0em 0em 0.5em rgb(12, 66, 96);
+  flex-wrap: wrap;
+  padding: 1em;
+  max-width: 400px;
+}
+
+svg {
+  border-radius: 0.1em;
+  border: 5px solid rgb(2, 82, 125);
+}
+
+svg rect {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 1.5px;
+}
+
+svg line {
+  stroke: rgba(50, 50, 50, 0.7);
+  stroke-width: 1px;
+}
+
+#svgCanvas {
+  background-color: rgb(31, 31, 31, 0.95);
+}
+
+#svgNext {
+  background-color: rgb(31, 31, 31, 0.95);
+}
+
+#svgHold {
+  background-color: rgb(31, 31, 31, 0.95);
+  margin-top: -20px;
+  margin-bottom: -15px;
+}
+
+#svgNext text,
+#svgHold text {
+  font-family: Impact, Arial, sans-serif;
+  font-size: 4.7em;
+  font-weight: bold;
+  fill: rgb(60, 60, 60, 0.6);
+  text-transform: uppercase;
+  text-anchor: middle;
+  letter-spacing: 1px;
+}
+
+#info {
+  width: 160px;
+  margin-top: 1em;
+}
+
+#info>.text {
+  font-weight: bold;
+}
+
+.left {
+  font-size: 1em;
+  float: left;
+}
+
+.right {
+  font-size: 1em;
+  float: right;
+}
+
+#gameOver {
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#gamePause {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#restartButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+#restartButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#restartButton:active {
+  background-color: #00439e;
+  transform: translateY(0);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#pauseButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+#pauseButton:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#pauseButton:active {
+  background-color: #0c6770;
+  transform: translateY(0);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#gameInstructions {
+  margin-top: 15px;
+  background-color: rgba(47, 42, 42, 0.6);
+  color: #a1a1a1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.key {
+  font-family: 'Courier New', monospace, sans-serif;
+  background-color: #a1a1a1;
+  padding: 2px 6px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000;
+}
+
+#signature {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Lucida Sans', sans-serif, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+}

@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>FIT2102 A1 2023</title>
+</head>
+
+<body>
+  <h1>Tetris</h1>
+  <main id="main" class="flex row">
+    <svg id="svgCanvas">
+      <!-- game over text box -->
+      <g id="gameOver" visibility="hidden">
+        <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+        <text x="36" y="150">Game Over</text>
+      </g>
+      <g id="gamePause" visibility="hidden">
+        <rect x="26" y="120" fill="white" height="48" width="149"></rect>
+        <text x="36" y="150">Game Paused</text>
+      </g>
+    </svg>
+    <div id="sideBar" class="flex col">
+      <svg id="svgNext">
+        <text x="80" y="70">NEXT</text>
+      </svg>
+      <svg id="svgHold">
+        <text x="80" y="70">HOLD</text>
+      </svg>
+      <div id="info" class="flex col">
+        <div class="text">
+          <span class="left">Level: </span>
+          <span class="right" id="levelText">...</span>
+        </div>
+        <div class="text">
+          <span class="left">Score: </span>
+          <span class="right" id="scoreText">...</span>
+        </div>
+        <div class="text">
+          <span class="left">Highscore: </span>
+          <span class="right" id="highScoreText">...</span>
+        </div>
+        <button id="pauseButton">&#10074;&#10074; | &#9658;</button>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+  </main>
+  <div id="gameInstructions" class="instructions" style="font-family:monospace;font-size:12px;">
+    <p><span class="key">&uarr;</span> : rotate</p>
+    <p><span class="key">&larr;</span> <span class="key">&darr;</span> <span class="key">&rarr;</span> : move</p>
+    <p><span class="key">space</span> : hard drop</p>
+    <p><span class="key">c</span> : hold/swap</p>
+  </div>
+  <div id="signature">
+    <p>Designed by Gan Shijie<br>for Monash University FIT2102 Assignment 1.</p>
+  </div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
