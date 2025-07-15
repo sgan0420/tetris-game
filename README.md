@@ -1,4 +1,7 @@
-# Assignment 1
+# Tetris Game
+
+## Live Demo
+🎮 **Play the game online:** [https://sgan0420.github.io/tetris-game/](https://sgan0420.github.io/tetris-game/)
 
 ## Usage
 
@@ -15,6 +18,16 @@ Start tests:
 Serve up the App (and ctrl-click the URL that appears in the console)
 ```
 > npm run dev
+```
+
+Build for production:
+```
+> npm run build
+```
+
+Deploy to GitHub Pages:
+```
+> npm run deploy
 ```
 
 ## Implementing features
